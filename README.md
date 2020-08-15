@@ -1,5 +1,5 @@
-Commands for running locally on mac that I used 
-Have to be in the same directory as the docker compose file
+**Commands for running locally on mac that I used**
+**Have to be in the same directory as the docker compose file**
 
 docker-compose build  
 
@@ -11,7 +11,7 @@ docker-compose run web python3  manage.py migrate
 
 
 
-Also have to create databse users manually meaning the postgres user from env file
+**Also have to create databse users manually meaning the postgres user from env file**
 
 Command to access postgres database: 
 
@@ -28,7 +28,7 @@ CREATE DATABASE [IF NOT EXISTS] db_name;
 //create database
 
 
-Access running site on
+**Access running site on**
 
 http://localhost/catalog/
 
