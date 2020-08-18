@@ -23,9 +23,15 @@ CREATE USER postgres WITH PASSWORD 'postgres' CREATEDB CREATEROLE LOGIN;
 //create a postgres role
 
 
-CREATE DATABASE [IF NOT EXISTS] db_name;
+CREATE DATABASE [IF NOT EXISTS] postgres
 
 //create database
+
+//see all users in and databases
+\du
+
+//exit database console
+/q
 
 
 **Access running site on**
