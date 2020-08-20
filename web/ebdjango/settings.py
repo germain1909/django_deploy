@@ -25,7 +25,7 @@ SECRET_KEY = 'ezy3vxv-pkxzbkay%so9#p(ten40%aiw&+i^eu+j8!fh!mu4t6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-13-58-229-179.us-east-2.compute.amazonaws.com']
+ALLOWED_HOSTS = ['ec2-13-58-229-179.us-east-2.compute.amazonaws.com','localhost', '127.0.0.1']
 
 
 # Application definition
@@ -74,27 +74,27 @@ WSGI_APPLICATION = 'ebdjango.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql', 
-#         'NAME': 'local',
-#         'USER': 'root',
-#         'PASSWORD': 'root',
-#         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-#         'PORT': '3306',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ['DB_NAME'],
-        'USER': os.environ['DB_USER'],
-        'PASSWORD': os.environ['DB_PASS'],
-        'HOST': os.environ['DB_SERVICE'],
-        'PORT': os.environ['DB_PORT']
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'local',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': os.environ['DB_NAME'],
+#         'USER': os.environ['DB_USER'],
+#         'PASSWORD': os.environ['DB_PASS'],
+#         'HOST': os.environ['DB_SERVICE'],
+#         'PORT': os.environ['DB_PORT']
+#     }
+# }
 
 
 # Password validation
