@@ -71,7 +71,7 @@ class BookListView(generic.ListView):
 
 class BookDetailView(generic.DetailView):
     model = Book
-    template_name = 'book_detail.html'  # Specify your own template name/location
+    # template_name = 'book_detail.html'  # Specify your own template name/location
     
 #aboce looks for template book_detail because takes the model name and adds _detail
 
